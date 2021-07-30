@@ -1,0 +1,103 @@
+<!-- 
+BONUSTASK
+
+Create an web application using create-react-app template
+1. Create a form with the following details
+User Model,
+
+a. Name - string
+b. Email - should be a valid email address
+c. Phone - should
+d. Age - should be an int
+e. Gender - dropdown list
+f. Date of Birth - date time stamp
+
+2. Submit Button - on submitting the form, add the details of entered user detail
+to the list of user models
+3. Proper validation should be done on submitting the form. Display the
+validation error in proper format
+4. Display the details in the table format 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="innbody">
+        <div id="header">
+            Add Student Data
+        </div>
+        <table>
+            <tr>
+                <td>Name :</td>
+                <td><input type="text" class="name" required id="name"></td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input type="email" class="name" required id="email"></td>
+            </tr>
+            <tr>
+                <td>Phone :</td>
+                <td><input type="number" class="name" required id="phone"></td>
+            </tr>
+            <tr>
+                <td>Age :</td>
+                <td><input type="number" class="name" required id="age"></td>
+            </tr>
+            <tr>
+                <td>Gender :</td>
+                <td>
+                    <select name="gen" class="name" id="gen" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                        <option value="notToSay">Not to say</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>DoB :</td>
+                <td><input type="date" class="name" required id="dob"></td>
+            </tr>
+        </table>
+
+        <div>
+            <button class="but" id="submit">SUBMIT</button>
+            <button class="but" id="show">Show sheet</button>
+        </div>
+    </div>
+    <div id="sheet">
+        <table class="tab">
+            <tr id="theader">
+                <td>Name</td>
+                <td>Email</td>
+                <td>Phone</td>
+                <td>Age</td>
+                <td>Gender</td>
+                <td>DoB</td>
+            </tr>
+            <!-- <tr>
+                <td>name</td>
+                <td>email</td>
+                <td>phone</td>
+                <td>age</td>
+                <td>gender</td>
+                <td>dob</td>
+            </tr> -->
+        </table>
+        <button class="but" id="add">Add More</button>
+    </div>
+</body>
+
+<script src="jquery-3.6.0.js"></script>
+<script src="script.js"></script>
+
+</html>

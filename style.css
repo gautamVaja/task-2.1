@@ -1,0 +1,81 @@
+#innbody td {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+#header {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    margin: 50px;
+}
+
+#innbody {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input, select, option {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.but {
+    background-color: white;
+    font-weight: 400;
+    font-size: 2em;
+    margin: 20px;
+}
+
+/** sheet details */
+
+#sheet {
+    display: inline-flex;
+    border-left: 3px solid black;
+    justify-content: center;
+    align-items:flex-start;
+    padding-left: 26px ;
+    flex-direction: column;
+}
+
+#theader{
+    transition: none;
+    background-color: darkblue;
+    color: white;
+    font-family: cursive;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.tab table {
+    border-collapse: collapse;
+    border-bottom: 2px solid black;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tab td {
+    border-bottom: 2px solid black;
+    overflow-x: auto;
+    text-align: center;
+    vertical-align: middle;
+    padding: 3px 26px;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.tab tr:nth-child(even) {
+    background-color: #caf0fd;
+}
+
+.tab tr:nth-child(odd) {
+    background-color: #2acaff;
+}
+
+.tab tr:hover {
+    transition: all 1s;
+    background-color: darkgrey;
+}
