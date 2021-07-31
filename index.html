@@ -1,24 +1,3 @@
-<!-- 
-BONUSTASK
-
-Create an web application using create-react-app template
-1. Create a form with the following details
-User Model,
-
-a. Name - string
-b. Email - should be a valid email address
-c. Phone - should
-d. Age - should be an int
-e. Gender - dropdown list
-f. Date of Birth - date time stamp
-
-2. Submit Button - on submitting the form, add the details of entered user detail
-to the list of user models
-3. Proper validation should be done on submitting the form. Display the
-validation error in proper format
-4. Display the details in the table format 
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,46 +11,39 @@ validation error in proper format
 
 <body>
     <div id="innbody">
-        <div id="header">
-            Add Student Data
+        <div id="left">
+            <div id="oneleft">
+                Learn to code by watching others
+            </div>
+            <div id="secleft">
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+                understanding how developers think is invaluable
+            </div>
         </div>
-        <table>
-            <tr>
-                <td>Name :</td>
-                <td><input type="text" class="name" required id="name"></td>
-            </tr>
-            <tr>
-                <td>Email :</td>
-                <td><input type="email" class="name" required id="email"></td>
-            </tr>
-            <tr>
-                <td>Phone :</td>
-                <td><input type="number" class="name" required id="phone"></td>
-            </tr>
-            <tr>
-                <td>Age :</td>
-                <td><input type="number" class="name" required id="age"></td>
-            </tr>
-            <tr>
-                <td>Gender :</td>
-                <td>
-                    <select name="gen" class="name" id="gen" required>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                        <option value="notToSay">Not to say</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>DoB :</td>
-                <td><input type="date" class="name" required id="dob"></td>
-            </tr>
-        </table>
-
+        <div id="right">
+            <div id="lable">
+                Try it free 7 days then $20/mo. thereafter
+            </div>
+            <div id="secright">
+                <div id="form">
+                    <form action="get">
+                        <input type="text" name="fname" id="fname" placeholder="First Name">
+                        <input type="text" name="lname" id="lname" placeholder="Last Name">
+                        <input type="email" name="email" id="email" placeholder="Email Address">
+                        <input type="text" name="psw" id="psw" placeholder="Password">
+                    </form>
+                </div>
+                <div id="claimButt">
+                    CLAIM YOUR FREE TRAIL
+                </div>
+                <div id="tnc">
+                    By clicking the button, you are agreeing to our <span class="tnc2">Terms and Services</span>
+                </div>
+            </div>
+        </div>
         <div>
             <button class="but" id="submit">SUBMIT</button>
-            <button class="but" id="show">Show sheet</button>
+            <button class="but" id="show">Show Sheet</button>
         </div>
     </div>
     <div id="sheet">
@@ -84,14 +56,6 @@ validation error in proper format
                 <td>Gender</td>
                 <td>DoB</td>
             </tr>
-            <!-- <tr>
-                <td>name</td>
-                <td>email</td>
-                <td>phone</td>
-                <td>age</td>
-                <td>gender</td>
-                <td>dob</td>
-            </tr> -->
         </table>
         <button class="but" id="add">Add More</button>
     </div>
