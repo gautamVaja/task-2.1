@@ -6,20 +6,21 @@
 }
 
 /** main page*/
-#innbody{
+
+#innbody {
     background-image: url(asset/bg-intro-desktop.png);
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: #ff7a7a;
 }
-#main{
+
+#main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     font-family: sans-serif;
-
     position: absolute;
     height: 100%;
     width: 100%;
@@ -27,46 +28,43 @@
 
 /** left part*/
 
-#left{
+#left {
     width: 30%;
 }
 
-#oneleft{
+#oneleft {
     color: white;
     font-size: 40px;
     font-weight: 600;
-    
     margin-bottom: 20px;
 }
 
-#secleft{
+#secleft {
     color: white;
     font-size: 20px;
     font-weight: 300;
-    
 }
 
 /** right part*/
 
-#form input, #claimButt{
+#form input, #claimButt, #sheetpsw {
     display: block;
     margin-bottom: 15px;
     font-weight: 400px;
-
     height: 30px;
     width: 300px;
     border-radius: 10px;
     padding: 3.5px;
 }
 
-#claimButt{
-    color:white;
+#claimButt {
+    color: white;
     background-color: #38cc8c;
     font-size: large;
     font-weight: 700;
 }
 
-#lable{
+#lable {
     color: white;
     background-color: #6055a5;
     font-weight: 300;
@@ -78,14 +76,13 @@
     width: 400px;
 }
 
-#try{
+#try {
     font-weight: 800;
 }
 
-#secright{
+#secright {
     width: 400px;
     background-color: white;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -94,8 +91,8 @@
     border-radius: 10px;
 }
 
-#claimButt{
-    color:white;
+#claimButt {
+    color: white;
     background-color: #38cc8c;
     height: 30px;
     width: 300px;
@@ -103,11 +100,12 @@
     border: 0;
 }
 
-#tnc{
+#tnc {
     font-size: 13px;
 }
-#tnc2{
-    color:#ff6b6b;
+
+#tnc2 {
+    color: #ff6b6b;
     font-weight: 600;
 }
 
@@ -117,12 +115,12 @@
     display: inline-flex;
     border-left: 3px solid black;
     justify-content: center;
-    align-items:flex-start;
-    padding-left: 26px ;
+    align-items: flex-start;
+    padding-left: 26px;
     flex-direction: column;
 }
 
-#theader{
+#theader {
     transition: none;
     background-color: darkblue;
     color: white;
@@ -159,4 +157,27 @@
 .tab tr:hover {
     transition: all 1s;
     background-color: darkgrey;
+}
+
+/**Show sheet*/
+#pswauth{
+    position: absolute;
+    top: 40vh;
+    right: 40vw;
+    z-index: 7;
+    background-color: #fd4c4c;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 26px;
+    flex-direction: column;
+    border: darkred 2.6px solid;
+    border-radius: 10px;
+}
+#sheetpsw{
+    font-size: 13px;
+}
+#pswtext{
+    font-size: 39px;
+    font-family: cursive;
 }

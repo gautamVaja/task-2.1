@@ -1,15 +1,17 @@
 $(document).ready(function () {
     $('#sheet').hide();
+    // $('#show').hide();
+    $('#pswauth').hide();
 });
-$("#submit").click(function () {
+$("#claimButt").click(function () {
     console.log('clicked');
     var fname = $('#fname').val();
     var lname = $('#lname').val();
     var email = $('#email').val();
     var psw = $('#psw').val();
 
-    $('#innbody').hide();
-    $('#sheet').show();
+    // $('#innbody').hide();
+    // $('#sheet').show();
 
     if (email == '' || fname == '' || lname == '' || psw == '') {
         alert('Fill the Form!!!');
@@ -28,7 +30,7 @@ function ac() {
     }
 }
 function prints(fname, lname, email, psw) {
-    $("table.tab").html($('table.tab').html() + "<tr>    <td>" + fname+" "+ lname + "</td>    <td>" + email + "</td> ");
+    $("table.tab").html($('table.tab').html() + "<tr>    <td>" + fname + " " + lname + "</td>    <td>" + email + "</td> ");
     $("table.tab>td").addClass('tab');
 }
 
@@ -38,8 +40,32 @@ $('#add').click(function (e) {
     $('#sheet').hide();
 });
 
+
+var password = '19137';
+
 $('#show').click(function (e) {
     e.preventDefault();
-    $('#innbody').hide();
-    $('#sheet').show();
+    $('#pswauth').show();
+    $('#getsheet').click(function (e) {
+        e.preventDefault();
+        var psw = $('#sheetpsw').val();
+        console.log("hi", psw);
+        if (psw === password) {
+            $('#innbody').hide();
+            $('#sheet').show();
+            $('#sheetpsw').val('');
+            $('#pswauth').hide();
+        }
+        else {
+            alert('incorrect password');
+        }
+        $('#sheetpsw').val('');
+        $('#pswauth').hide();
+    });
+});
+$('#show').mouseover(function () {
+    $('#show').text('Show Sheet');
+});
+$('#show').mouseleave(function () {
+    $('#show').text('');
 });
